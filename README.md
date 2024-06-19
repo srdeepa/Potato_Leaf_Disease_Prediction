@@ -95,13 +95,13 @@ Here are the screenshots for the home page, including uploading, predicting, and
 
 The application processes the uploaded image and predicts the disease status of the potato leaf.
 
-![Predicting Disease](outputs\Input.jpeg)
+![Predicting Disease](outputs/Input.jpeg)
 
 ### Back to Home
 
 User navigates back to the home page after viewing the prediction results, ready to upload another image or perform a new prediction.
 
-![Back to Home](outputs\result.jpeg)
+![Back to Home](outputs/result.jpeg)
 
 ## Conclusion
 
