@@ -15,7 +15,7 @@ except Exception as e:
     exit()
 
 # Define disease names corresponding to class indices
-disease_names = ['NOT A POTATO LEAF', 'POTATO EARLY BLIGHT LEAF', 'POTATO HEALTHY LEAF']
+disease_names = ['POTATO EARLY BLIGHT LEAF', 'POTATO LATE BLIGHT LEAF', 'POTATO HEALTHY LEAF']
 
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'
@@ -61,10 +61,10 @@ def index():
             
             if predicted_disease == 'POTATO HEALTHY LEAF':
                 result_message = "The leaf is not infected."
-            elif predicted_disease == 'NOT A POTATO LEAF':
-                result_message = "wrong input."
             elif predicted_disease == 'POTATO EARLY BLIGHT LEAF':
-                result_message = "The leaf is infected with early blight."
+                result_message = "The leaf is infected with early blight"
+            elif predicted_disease == 'POTATO LATE BLIGHT LEAF':
+                result_message = "The leaf is infected with late blight."
 
             return f"""
             <html>
